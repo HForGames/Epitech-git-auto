@@ -65,7 +65,8 @@ def add_new_token():
     r = input("Your token :")
     if not os.path.exists(".env"):
         with open(".env", "w") as f:
-            f.write("GITHUB_TOKEN=")
+            f.write(f"GITHUB_TOKEN={r}")
+        return
     with open(".env", "r") as f:
         data = f.read()
     data = data.replace(f"GITHUB_TOKEN={TOKEN}", f"GITHUB_TOKEN={r}")
