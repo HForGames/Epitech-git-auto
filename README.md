@@ -40,7 +40,3 @@ python3 update.py [options]
 
 - Ensure your GitHub token has sufficient permissions and SSO enabled if needed.
 - The script organizes repositories into directories based on semesters (e.g., `Tek-1`, `Tek-2`).
-
-## License
-
-This project is licensed under the MIT License.
